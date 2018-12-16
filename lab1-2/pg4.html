@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bootstrap</title>
+		<script src = "redac.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	
+<body onLoad = "iframe()"> 
+<div class="navbar-title"><center><h1><p>Беcсмертный поет</p></h1></center></div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">  
+                    <li><a href="index.html">Про автора </a></li>
+                    <li><a href="pg2.html">Произведения </a></li>
+                    <li><a href="pg3.html">Контакты</a></li>
+					<li><a href="pg4.html">Пожелания</a></li>
+        </div>   
+    </div>
+            <div id="sections">
+                <div class="sidebar">
+                    <center><img src = "img/Lutik.png" width = "200" height = "400"></center>
+					<p><center><h2>Лютик</h2></center></p>
+                    <p></p>
+                </div>
+            </div>
+            
+            <div id="content">
+			
+                <h4><b> Здесь вы можете оставить свои пожелания</b></h4>
+              <form method = "post" onsubmit = "return formsubmit();" action = "pg4.html" id = "rtf">
+				<input type = "button" value = "B" onclick = "bold()">
+				<input type = "button" value = "I" onclick = "italic()">
+				<input type = "button" value = "U" onclick = "underline()">
+				<input type = "button" value = "Size" onclick = "fontsize()">
+				<input type = "button" value = "Color" onclick = "fontcolor()">
+				<input type = "button" value = "Hl" onclick = "highlight()">
+				<br><br>
+				<textarea name = "textarea" id = "textarea" style = "display: none;"></textarea>
+				<iframe name = "editor" id = "editor" style = "width: 500; height: 400;"></iframe>
+				<br><br>
+				<input type = "submit" value = "Отправить">
+				<input type = "button" value = "Send" onclick = "send('da')">
+				<input type = "button" value = "Get" onclick = "get('file.txt')">
+				
+			  </form>
+			  <div class = "coment">
+				<div id = "da"> </div>
+			  </div>
+			  
+			  
+			</div>
+		<div id="footer">
+			<pre><p> 	Голубиная почта временно отключена прошу простить за временные неудобности		</p></pre>
+			<pre><p>	Но вы всегда можете меня найти в .....   	</p></pre>
+        </div>
+		</body>
+    
+</html>
